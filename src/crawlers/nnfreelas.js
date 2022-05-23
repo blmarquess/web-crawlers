@@ -3,7 +3,12 @@ const Puppeteer = require("puppeteer");
 const url = "https://www.99freelas.com.br/projects?categoria=web-mobile-e-software&page=1";
 
 const nnfreelas = async () => {
-  const browser = await Puppeteer.launch();
+  const browser = await Puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
+  });
   const page = await browser.newPage();
   await page.goto(url);
   const resultData = await page.evaluate(() => {
