@@ -1,0 +1,33 @@
+{
+  "name": "web-crawlers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blmarquess/web-crawlers.git"
+  },
+  "keywords": [
+    "crawler",
+    "puppeteer",
+    "node-js"
+  ],
+  "author": "Bruno Marques",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/blmarquess/web-crawlers/issues"
+  },
+  "homepage": "https://github.com/blmarquess/web-crawlers#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "puppeteer": "^14.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
