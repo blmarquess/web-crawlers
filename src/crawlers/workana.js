@@ -3,7 +3,12 @@ const Puppeteer = require("puppeteer");
 const url = "https://www.workana.com/jobs?category=it-programming&language=pt";
 
 const workana = async () => {
-  const browser = await Puppeteer.launch();
+  const browser = await Puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
+  });
   const page = await browser.newPage();
   await page.goto(url);
   const resultData = await page.evaluate(() => {
