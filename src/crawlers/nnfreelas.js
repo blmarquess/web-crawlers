@@ -23,7 +23,12 @@ const nnfreelas = async () => {
       skills.forEach(skill => {
         skillsText.push(skill.innerText);
       });
-      result.push({ title, link, description, skills: skillsText });
+      result.push({
+        title,
+        link,
+        description: description.replace(/\n/g, ' '),
+        skills: skillsText.length ? skillsText : ['Não especificado'],
+      });
     });
     return result;
   });
