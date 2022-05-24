@@ -1,7 +1,6 @@
 const Puppeteer = require("puppeteer");
 
 const url = "https://www.workana.com/jobs?category=it-programming&language=pt";
-const font = 'workana';
 
 const workana = async () => {
   const browser = await Puppeteer.launch({
@@ -29,7 +28,7 @@ const workana = async () => {
         link,
         description: description.replace(/\n/g, ' '),
         skills: skillsText.length ? skillsText : ['Não especificado'],
-        font,
+        font: 'workana',
       });
     });
     return result;

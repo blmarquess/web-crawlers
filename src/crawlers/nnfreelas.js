@@ -1,7 +1,6 @@
 const Puppeteer = require("puppeteer");
 
 const url = "https://www.99freelas.com.br/projects?categoria=web-mobile-e-software&page=1";
-const font = '99freelas';
 
 const nnfreelas = async () => {
   const browser = await Puppeteer.launch({
@@ -29,7 +28,7 @@ const nnfreelas = async () => {
         link,
         description: description.replace(/\n/g, ' '),
         skills: skillsText.length ? skillsText : ['Não especificado'],
-        font,
+        font: '99freelas',
       });
     });
     return result;
