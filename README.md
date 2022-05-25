@@ -2,9 +2,10 @@
 
 Servidor NodeJS rodando crawlers feitos com puppeteer para monitorar site de freelancers e retornar os novos jobs publicados.
 
-exemplo de um dos endpoints : https://web-crawlers-api.herokuapp.com/nnf
+exemplo de um dos endpoints : <https://web-crawlers-api.herokuapp.com/nnf>
 
 resposta:
+
 ```JavaScript
   [
   {
@@ -23,9 +24,9 @@ resposta:
   ]
 ```
 
-### Tecnologias utilizadas
+## Tecnologias utilizadas
 
-Hambiente JavaScript: [Node-JS](https://nodejs.org/en/)   
-CrawlDevTool: [Puppeteer](https://developers.google.com/web/tools/puppeteer)    
-Framework:[Express](https://expressjs.com/)   
-Deploy: [Heroku](https://www.heroku.com)   
+Hambiente JavaScript: [Node-JS](https://nodejs.org/en/)
+CrawlDevTool: [Puppeteer](https://developers.google.com/web/tools/puppeteer)
+Framework:[Express](https://expressjs.com/)
+Deploy: [Heroku](https://www.heroku.com)

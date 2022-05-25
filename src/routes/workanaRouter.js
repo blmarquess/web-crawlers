@@ -1,14 +1,21 @@
-const { workana } = require("../crawlers/workana");
+const { nnfreelas } = require("../crawlers/nnfreelas");
 
-const workanaRouter = require("express").Router();
-workanaRouter.get("/", async (_req, res) => {
+const nnfRouter = require("express").Router();
+
+let ArrJobs = [];
+
+nnfRouter.get("/", async (_req, res) => {
   try {
-    const result = await workana();
-    res.status(200).json(result);
+    if (ArrJobs.length) {
+      res.status(200).json(ArrJobs);
+    } else {
+      ArrJobs = await nnfreelas();
+      res.status(200).json(ArrJobs);
+    }
   } catch (err) {
     console.log(err.message);
     res.status(500).json({ message: err.message });
   }
 });
 
-module.exports = workanaRouter;
+module.exports = nnfRouter;
