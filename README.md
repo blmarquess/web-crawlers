@@ -30,3 +30,10 @@ Hambiente JavaScript: [Node-JS](https://nodejs.org/en/)
 CrawlDevTool: [Puppeteer](https://developers.google.com/web/tools/puppeteer)
 Framework:[Express](https://expressjs.com/)
 Deploy: [Heroku](https://www.heroku.com)
+
+
+<div align='center'>
+		
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N2DC6XA)
+		
+</div>
